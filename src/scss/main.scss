@@ -1,10 +1,9 @@
 /*
-;
 @import 'components/code';
 @import 'components/links';
 @import 'layout/page';
-
 */
+
 @import 'core/variables';
 @import 'core/reset';
 @import 'layout/header';
@@ -32,7 +31,6 @@
         text-transform: uppercase;        
         line-height: 3.7rem;
         margin: 0 2rem 0 2rem;
-
     }
     &__text {
         color: $whitecolor;
@@ -45,10 +43,8 @@
         background-color: $whitecolor;        
         padding: 0.7rem 0.5rem 0.5rem 0.5rem;
         border-radius: 50%;
-        margin: 1.5rem 0 2.5rem 0;
-        
+        margin: 1.5rem 0 2.5rem 0;        
     }
-
 }
 
 /*-----tips article*/
@@ -62,7 +58,7 @@
         margin-bottom: 0.7rem;
     }
     &__title {
-        font-size: $titlesize;
+        font-size: 1.7rem;
         font-family: $fonttitle;
         font-weight: 700; /*no consigo que coja este weight en computed*/        
         text-transform: capitalize;
@@ -84,7 +80,6 @@
         padding: 0.3rem 1.5rem 0.3rem 1.5rem;
         border-radius: 50px;
         margin-bottom: 2.5rem;
-
     }
 }
  
@@ -94,11 +89,15 @@
     background-color: $lightbluebackground;
     text-align: center;
     padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
     &__title {
-        font-size: $titlesize;
+        font-size: 1.5rem;
         font-family: $fonttitle;
         text-transform: capitalize;
-        margin: 1rem 0 3rem 0;
+        margin: 1rem 0.5rem 3rem 0.5rem;
     }
     &__container {
         padding-left: 4rem;
@@ -125,17 +124,15 @@
         border-radius: 50px;
         margin-top: 2rem;
         margin-bottom: 3rem;
-        
+        max-width: 80%;        
     }
     &__arrow {
         background-color: $whitecolor;
         text-align: center; 
-        width: 2rem;              
-        border-radius: 50%;
-        padding: 0.5rem;        
-        position: relative;
-        left: 50%;
-        top:1.5rem;
-        transform: translate(-50%);
+        width: 2rem;       
+        padding: 0.8rem 0.5rem 0.5rem 0.5rem;   
+        border-radius: 50%;  
+        position: relative;        
+        top:1.5rem;        
     }
 }

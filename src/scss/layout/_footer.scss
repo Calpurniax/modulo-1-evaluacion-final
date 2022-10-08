@@ -1,3 +1,36 @@
 .footer {
+    font-family: $fonttext; 
     background-color: $darkbluebackground;
+    color: $whitecolor;    
+    text-align: center;
+    padding-top: 3.5rem;
+    padding-bottom: 3rem;
+    &__nav{               
+        text-transform: uppercase;
+        &--web {
+            line-height: 1.7rem;
+            margin-bottom: 1.7rem;            
+        }
+        &--social {
+            line-height: 1.7rem;
+            margin-bottom: 1.7rem;   
+        }
+        a {
+            color: $whitecolor;
+            text-decoration: none;
+        }
+    }
+    &__copy {
+        line-height:2rem;        
+        &--heart {            
+            color: $orangecolor;
+            transform: scale(0.7);
+            position: relative;
+            top: 0.1rem;
+            margin-left: 0.1rem;
+            margin-right: 0.1rem;
+        }
+    }
+    
+    
 }

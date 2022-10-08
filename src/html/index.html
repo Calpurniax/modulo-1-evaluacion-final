@@ -9,18 +9,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/main.css" />
+  <script src="https://kit.fontawesome.com/eeb1df6846.js" crossorigin="anonymous"></script>
   <title>Evaluación final módulo 1 - Sofía Gracia</title>
 </head>
 
 <body>
-  <header class="header">
-    <div>hamburguesita, etiqueta semántica para esto?</div>
-  </header>
+  <include src="./partials/header.html"></include>
   <main>
-    <section class="hero">
+    <section class="hero" id="hero">
       <h1 class="hero__title">Anonymous proxy</h1>
       <p class="hero__text">In hac habitasse platea dictumst.</p>
-      <div class="hero__arrow"><a href="#"><img src="./assets/images/ico-scroll-down.svg"></a> </div>
+      <div class="hero__arrow"><a href="#reasons"><img src="./assets/images/ico-scroll-down.svg"></a> </div>
     </section>
     <article class="tips">
       <h6 class="tips__minititle">Insomnia tips</h6>
@@ -29,7 +28,7 @@
         diam nec lectus. Vivamus semper sodales rutrum.</p>
       <button class="tips__button">Go</button>
     </article>
-    <section class="reasons">
+    <section class="reasons" id="reasons">
       <h3 class="reasons__title">3 reasons to purchase</h3>
       <div class="reasons__container">
         <include src="./partials/reasons.html" title="Ut sed metus" text="Lorem ipsum dolor sit amet, consecteur.">
@@ -40,32 +39,10 @@
         </include>
       </div>
       <button class="reasons__button">More reasons</button>
-      <div class="reasons__arrow"><a href="#"><img src="../assets/images/ico-arrow.svg"></a></div>
+      <div class="reasons__arrow"><a href="#hero"><img src="../assets/images/ico-arrow.svg"></a></div>
     </section>
-
   </main>
-  <footer class="footer">
-    <nav class="footer__nav">
-      <ul class="footer__nav--web">
-        <li><a href="">Articles</a></li>
-        <li><a href="">Books</a></li>
-        <li><a href="">Events</a></li>
-        <li><a href="">Reasons</a></li>
-        <li><a href="">Tips</a></li>
-      </ul>
-      <ul class="footer__nav--social">
-        <li><a href="">Twitter</a></li>
-        <li><a href="">Instagram</a></li>
-        <li><a href="">Mastodon.social</a></li>
-      </ul>
-    </nav>
-    <div class="footer__copy">
-      <p>&copy;2022</p>
-      <p>we ❤︎ components</p>
-    </div>
-
-  </footer>
-
+  <include src="./partials/footer.html"></include>
 </body>
 
 </html>
