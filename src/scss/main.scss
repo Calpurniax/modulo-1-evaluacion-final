@@ -3,9 +3,38 @@
 @import 'components/code';
 @import 'components/links';
 @import 'layout/page';
-@import 'layout/header';
+
 @import 'layout/footer';
 
 */
 @import 'core/variables';
 @import 'core/reset';
+@import 'layout/header';
+
+.hero {
+    height: 100vh;
+    background-image: url(../images/cover.jpeg);
+    background-size: cover;
+    background-position: center;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+       
+    &__title {
+        text-align: center;
+        font-family: $fonttitle;
+        color: $whitecolor;
+        font-size: 2.7rem;
+        text-transform: uppercase;
+    }
+    &__text {
+        color: $whitecolor;
+        font-family: $fonttext;
+    }
+    &__arrow {
+        background-color: $whitecolor;
+        padding: 0.5rem;
+        border-radius: 50%;
+    }
+}
