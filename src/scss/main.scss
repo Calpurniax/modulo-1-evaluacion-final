@@ -4,12 +4,13 @@
 @import 'components/links';
 @import 'layout/page';
 
-@import 'layout/footer';
-
 */
 @import 'core/variables';
 @import 'core/reset';
 @import 'layout/header';
+@import 'layout/footer';
+
+/*------hero*/
 
 .hero {
     height: 100vh;
@@ -18,23 +19,123 @@
     background-position: center;    
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;   
     justify-content: flex-end;
-       
+    gap: 10px;
+    
     &__title {
+        word-spacing: 60vw;        /*no me ha servido max widht 10ch porque lo descentraba ??*/
         text-align: center;
         font-family: $fonttitle;
         color: $whitecolor;
-        font-size: 2.7rem;
-        text-transform: uppercase;
+        font-size: 2.5rem;
+        text-transform: uppercase;        
+        line-height: 3.7rem;
+        margin: 0 2rem 0 2rem;
+
     }
     &__text {
         color: $whitecolor;
         font-family: $fonttext;
+        font-size: 1rem;
+        margin-top: 1rem;
+        word-spacing: 0.1rem; 
+    }
+    &__arrow {
+        background-color: $whitecolor;        
+        padding: 0.7rem 0.5rem 0.5rem 0.5rem;
+        border-radius: 50%;
+        margin: 1.5rem 0 2.5rem 0;
+        
+    }
+
+}
+
+/*-----tips article*/
+
+.tips {
+    margin: 3rem 1rem 0 1rem;  
+    &__minititle {
+        font-size: 0.9rem;
+        color: $bluecolor;        
+        text-transform: capitalize;
+        margin-bottom: 0.7rem;
+    }
+    &__title {
+        font-size: $titlesize;
+        font-family: $fonttitle;
+        font-weight: 700; /*no consigo que coja este weight en computed*/        
+        text-transform: capitalize;
+        margin-bottom: 1rem;
+        line-height: 2rem;
+    }
+    &__text {
+        font-size: 1.2rem;
+        color: $blackcolor;
+        margin-bottom: 2rem;
+        
+    }
+    &__button {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $orangecolor;        
+        background-color: $whitecolor;
+        border: solid $orangecolor 0.17rem;
+        padding: 0.3rem 1.5rem 0.3rem 1.5rem;
+        border-radius: 50px;
+        margin-bottom: 2.5rem;
+
+    }
+}
+ 
+/*----reasons article*/
+
+.reasons {
+    background-color: $lightbluebackground;
+    text-align: center;
+    padding-top: 1rem;
+    &__title {
+        font-size: $titlesize;
+        font-family: $fonttitle;
+        text-transform: capitalize;
+        margin: 1rem 0 3rem 0;
+    }
+    &__container {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    &__article--title{
+        font-size: 1.12rem;
+        font-family: $fonttitle;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+    &__article--text{
+        font-size: 1.12rem;
+        line-height: 1.7rem;
+        margin-bottom: 3rem;       
+    }
+    &__button {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $whitecolor;
+        background-color: $orangecolor;
+        border: none;
+        padding: 0.7rem 2rem 0.7rem 2rem;
+        border-radius: 50px;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        
     }
     &__arrow {
         background-color: $whitecolor;
-        padding: 0.5rem;
+        text-align: center; 
+        width: 2rem;              
         border-radius: 50%;
+        padding: 0.5rem;        
+        position: relative;
+        left: 50%;
+        top:1.5rem;
+        transform: translate(-50%);
     }
 }
