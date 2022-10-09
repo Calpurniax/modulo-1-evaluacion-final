@@ -4,49 +4,58 @@
     color: $whitecolor;    
     text-align: center;
     display: flex;
-    flex-direction: column;
-    padding-top: 3.5rem;
+    flex-direction: column; 
+    padding-top: 4rem;     
     padding-bottom: 3rem;
         @media all and (min-width: 768px){
             flex-direction: row-reverse;
             justify-content: space-between;
-            text-align: left;             
-            padding-bottom: 1rem;
-                     
+            text-align: left;  
+            padding-top: 3rem;             
+            padding-bottom: 1rem;                     
+        }
+        @media all and (min-width: 1200px){ 
+            justify-content: center;    
         }
     &__nav{               
-        text-transform: uppercase;
+        text-transform: uppercase; 
+             
         @media all and (min-width: 768px){
             width: 70%;
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
-            
+            justify-content: space-around;    
+            @media all and (min-width: 1200px){ 
+                width: auto; 
+                justify-content: flex-start;                 
+                gap: 6rem;
+            }
         }
-        &--web {
-            line-height: 1.7rem;
+        &--web {            
             margin-bottom: 1.7rem;
-            @media all and (min-width: 768px){
-                line-height: 2rem;
-            }            
+                    
         }
-        &--social {
-            line-height: 1.7rem;
+        &--social {            
             margin-bottom: 1.7rem;  
-            @media all and (min-width: 768px){
-                line-height: 2rem;
-            }  
+            
         }
         a {
             color: $whitecolor;
-            text-decoration: none;
+            text-decoration: none;            
+        }
+        &--li{
+            padding: 0.5rem;
         }
     }
     &__copy {
         line-height:2rem;  
         @media all and (min-width: 768px){            
             margin-left: 2rem;
-        }       
+        }         
+        @media all and (min-width: 1200px){            
+            padding-right: 3rem;
+            margin-left: 0;
+        }                
         &--heart {            
             color: $orangecolor;
             transform: scale(0.7);
@@ -55,7 +64,5 @@
             margin-left: 0.1rem;
             margin-right: 0.1rem;
         }
-    }
-    
-    
+    }   
 }
