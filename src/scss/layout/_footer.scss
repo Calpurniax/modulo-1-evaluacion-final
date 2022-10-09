@@ -4,7 +4,9 @@
     color: $whitecolor;    
     text-align: center;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    position: relative;
+    align-items: center;
     padding-top: 4rem;     
     padding-bottom: 3rem;
         @media all and (min-width: 768px){
@@ -12,7 +14,8 @@
             justify-content: space-between;
             text-align: left;  
             padding-top: 3rem;             
-            padding-bottom: 1rem;                     
+            padding-bottom: 1rem;  
+            align-items: flex-start;                   
         }
         @media all and (min-width: 1200px){ 
             justify-content: center;    
@@ -54,7 +57,7 @@
         }         
         @media all and (min-width: 1200px){            
             padding-right: 3rem;
-            margin-left: 0;
+            margin-left: -1rem;
         }                
         &--heart {            
             color: $orangecolor;
@@ -64,5 +67,20 @@
             margin-left: 0.1rem;
             margin-right: 0.1rem;
         }
-    }   
+    }     
+    &__arrow {
+    background-color: $whitecolor;    
+    width: 2rem;  
+    text-align: center;     
+    padding: 0.8rem 0.5rem 0.5rem 0.5rem; 
+    border: solid lightgrey 0.1rem ;  
+    border-radius: 50%;  
+    position: absolute;
+    top: -1.6rem;   
+    @media all and (min-width: 768px) {         
+        left:50%;
+        transform: translate(-50%);
+       
+        }
+    }  
 }

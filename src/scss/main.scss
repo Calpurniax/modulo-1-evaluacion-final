@@ -165,7 +165,7 @@
     align-items: center;
     @media all and (min-width: 768px) {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1rem;
+        grid-template-rows: 1fr 1fr 1fr;
     }
     &__title {
         font-size: 1.5rem;
@@ -231,7 +231,7 @@
         padding: 0.7rem 2rem 0.7rem 2rem;
         border-radius: 50px;
         margin-top: 2rem;
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
           
         @media all and (min-width: 768px) {            
             grid-column-start: 1;
@@ -243,20 +243,6 @@
         }
 
     }
-    &__arrow {
-        background-color: $whitecolor;
-        text-align: center; 
-        width: 2rem;       
-        padding: 0.8rem 0.5rem 0.5rem 0.5rem;   
-        border-radius: 50%;  
-        position: relative;        
-        top: 1.5rem;
-        @media all and (min-width: 768px) { 
-            top:0.6rem;
-            grid-column-start: 2;
-            grid-row-start: 4;
-        }
-    }  
 }
 
         
