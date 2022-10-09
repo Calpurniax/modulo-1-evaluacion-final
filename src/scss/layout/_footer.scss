@@ -3,6 +3,8 @@
     background-color: $darkbluebackground;
     color: $whitecolor;    
     text-align: center;
+    display: flex;
+    flex-direction: column;
     padding-top: 3.5rem;
     padding-bottom: 3rem;
     &__nav{               
