@@ -21,6 +21,9 @@
     align-items: center;   
     justify-content: flex-end;
     gap: 10px;
+    @media all and (min-width: 768px) {
+        padding-bottom: 3rem;
+    }
     
     &__title {
         word-spacing: 60vw;        /*no me ha servido max widht 10ch porque lo descentraba ??*/
@@ -31,6 +34,10 @@
         text-transform: uppercase;        
         line-height: 3.7rem;
         margin: 0 2rem 0 2rem;
+        @media all and (min-width: 768px) {
+            font-size: 6rem;
+            line-height: 8rem;
+        }
     }
     &__text {
         color: $whitecolor;
@@ -38,24 +45,40 @@
         font-size: 1rem;
         margin-top: 1rem;
         word-spacing: 0.1rem; 
+        @media all and (min-width: 768px) {
+            font-size: 2rem;
+            text-align: center;
+            line-height: 2.5rem;
+            width: 60vw;                /*como hacer que se baje la última palabra*/
+        }    
     }
     &__arrow {
         background-color: $whitecolor;        
         padding: 13px 9.7px 10px 9.7px;
         border-radius: 50%;
-        margin: 1.5rem 0 2.5rem 0;        
+        margin: 1.5rem 0 2.5rem 0; 
+        @media all and (min-width: 768px) {    
+            transform: scale(1.5);  
+        }
     }
 }
 
 /*-----tips article*/
 
 .tips {
-    margin: 3rem 1rem 0 1rem;  
+    margin: 3rem 1rem 0 1rem; 
+    @media all and (min-width: 768px) { 
+        margin: 3rem 1rem 0 3rem; 
+    }
     &__minititle {
         font-size: 0.9rem;
         color: $bluecolor;        
         text-transform: capitalize;
         margin-bottom: 0.7rem;
+        @media all and (min-width: 768px) { 
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        } 
     }
     &__title {
         font-size: 1.7rem;
@@ -64,11 +87,20 @@
         text-transform: capitalize;
         margin-bottom: 1rem;
         line-height: 2rem;
+        @media all and (min-width: 768px) { 
+            font-size: 2.2rem;
+            margin-bottom: 3rem;
+        } 
     }
     &__text {
         font-size: 1.2rem;
         color: $blackcolor;
         margin-bottom: 2rem;
+        @media all and (min-width: 768px) {
+            font-size: 1.6rem;
+            line-height: 2rem;            
+            margin-bottom: 3rem;
+        }
         
     }
     &__button {
@@ -80,6 +112,11 @@
         padding: 0.3rem 1.5rem 0.3rem 1.5rem;
         border-radius: 50px;
         margin-bottom: 2.5rem;
+        @media all and (min-width: 768px) {
+            transform: scale(1.4);
+            margin-left: 1.5rem;
+            margin-bottom: 5rem;
+        }
     }
 }
  
@@ -93,26 +130,66 @@
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
+    @media all and (min-width: 768px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1rem;
+    }
     &__title {
         font-size: 1.5rem;
         font-family: $fonttitle;
         text-transform: capitalize;
         margin: 1rem 0.5rem 3rem 0.5rem;
+        @media all and (min-width: 768px) {            
+                grid-column-start: 1;
+                grid-column-end: 4;
+                font-size: 2.3rem;
+            }
     }
-    &__container {
+    &__article {
         padding-left: 4rem;
         padding-right: 4rem;
-    }
-    &__article--title{
-        font-size: 1.12rem;
-        font-family: $fonttitle;
-        font-weight: bold;
-        margin-bottom: 0.5rem;
-    }
-    &__article--text{
-        font-size: 1.12rem;
-        line-height: 1.7rem;
-        margin-bottom: 3rem;       
+        @media all and (min-width: 768px) { 
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        &--1 {
+            @media all and (min-width: 768px) { 
+                grid-row-start: 2;
+                grid-column-start: 1/2;
+            }
+        }
+        &--2 {
+            @media all and (min-width: 768px) { 
+                grid-row-start: 2;
+                grid-column-start: 2/3;
+            }
+
+        }
+        &--3 {
+            @media all and (min-width: 768px) { 
+                grid-row-start: 2;
+                grid-column-start: 3/4;
+            }
+        }
+        &--title {
+            font-size: 1.12rem;
+            font-family: $fonttitle;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            @media all and (min-width: 768px) { 
+                font-size:1.5rem;
+                margin-bottom: 1rem;
+            }
+
+        }
+        &--text {
+            font-size: 1.12rem;
+            line-height: 1.7rem;
+            margin-bottom: 3rem;   
+            @media all and (min-width: 768px) { 
+                font-size:1.3rem;
+            }
+        }
     }
     &__button {
         font-size: 1.5rem;
@@ -124,7 +201,13 @@
         border-radius: 50px;
         margin-top: 2rem;
         margin-bottom: 3rem;
-        max-width: 80%;        
+        max-width: 80%;   
+        @media all and (min-width: 768px) {            
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            transform: scale(1.2);
+        }     
     }
     &__arrow {
         background-color: $whitecolor;
@@ -133,6 +216,22 @@
         padding: 0.8rem 0.5rem 0.5rem 0.5rem;   
         border-radius: 50%;  
         position: relative;        
-        top:1.5rem;        
-    }
+        top: 1.5rem;
+        @media all and (min-width: 768px) { 
+            top:0.6rem;
+            grid-column-start: 2;
+            grid-row-start: 4;
+        }
+    }  
 }
+
+        
+
+   
+        
+
+   
+    
+
+    
+
