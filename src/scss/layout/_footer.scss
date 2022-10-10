@@ -21,16 +21,14 @@
             justify-content: center;    
         }
     &__nav{               
-        text-transform: uppercase; 
-             
+        text-transform: uppercase;              
         @media all and (min-width: 768px){
             width: 70%;
             display: flex;
             flex-direction: row;
             justify-content: space-around;    
             @media all and (min-width: 1200px){ 
-                width: auto; 
-                justify-content: flex-start;                 
+                width: auto;                                 
                 gap: 6rem;
             }
         }
@@ -56,8 +54,8 @@
             margin-left: 2rem;
         }         
         @media all and (min-width: 1200px){            
-            padding-right: 3rem;
-            margin-left: -1rem;
+            padding-right: 8rem;
+            margin-left: -10rem;
         }                
         &--heart {            
             color: $orangecolor;
