@@ -29,7 +29,7 @@
             justify-content: space-around;               
             @media all and (min-width: 1200px){ 
                 width: auto;                                 
-                gap: 7rem;
+                gap: 9rem;
             }
         }
         &--web {            
@@ -55,7 +55,7 @@
         }         
         @media all and (min-width: 1200px){ 
             position: relative;           
-            right:3rem;
+            right: 9rem;
         }                
         &--heart {            
             color: $orangecolor;
