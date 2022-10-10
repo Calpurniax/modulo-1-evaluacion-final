@@ -1,0 +1,28 @@
+.footer__arrow {
+    background-color: $whitecolor;    
+    width: 2rem;  
+    text-align: center;     
+    padding: 0.8rem 0.5rem 0.5rem 0.5rem; 
+    border: solid lightgrey 0.1rem ;  
+    border-radius: 50%;  
+    position: absolute;
+    top: -1.6rem;      
+    @media all and (min-width: 768px) {         
+        left:50%;
+        transform: translate(-50%);
+       
+        }
+    &:hover {
+        animation-name: arrow-up;
+        animation-duration: 0.5s;       
+        animation-fill-mode: forwards;       
+    }
+}  
+@keyframes arrow-up {
+    from {
+        top: -1.6rem;  
+    }
+    to {
+        top: -2rem;
+    }
+}
