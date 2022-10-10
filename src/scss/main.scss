@@ -13,7 +13,8 @@
 
 .hero {
     height: 100vh;
-    background-image: url(../images/cover.jpeg);
+    background-color: $darkbluebackground;
+    background-image: url(../images/cover.jpeg);    
     background-size: cover;
     background-position: center;    
     display: flex;
@@ -32,6 +33,7 @@
         word-spacing: 60vw;        /*no me ha servido max widht 10ch porque lo descentraba ??*/
         text-align: center;
         font-family: $fonttitle;
+        font-weight: bold;
         color: $whitecolor;
         font-size: 2.5rem;
         text-transform: uppercase;        
@@ -89,6 +91,7 @@
                 
     }
     &__minititle {
+        font-family: $fonttext;
         font-size: 0.9rem;
         color: $bluecolor;        
         text-transform: capitalize;
@@ -105,7 +108,7 @@
     &__title {
         font-size: 1.7rem;
         font-family: $fonttitle;
-        font-weight: 700; /*no consigo que coja este weight en computed*/        
+        font-weight: bold;         
         text-transform: capitalize;
         margin-bottom: 1rem;
         line-height: 2rem;
@@ -152,10 +155,11 @@
             padding: 0.3rem 3 0.3rem 0rem;
             max-width: 150px;           
         }
+        &:hover {
+            transform: scale(1.2);
+        }
     }
-    &__button:hover {
-        transform: scale(1.2);
-    }
+    
     
 }
  
@@ -176,6 +180,7 @@
     &__title {
         font-size: 1.5rem;
         font-family: $fonttitle;
+        font-weight: bold;
         text-transform: capitalize;
         margin: 1rem 0.5rem 3rem 0.5rem;
         @media all and (min-width: 768px) {            
@@ -247,11 +252,12 @@
         @media all and (min-width: 1200px) { 
            width:300px;  /*es correcto que esto sean pixeles al ser el último breakpoint?*/
         }
+        &:hover{
+            color: $orangecolor;
+            background-color: $whitecolor;
+        }
     }
-    &__button:hover{
-        color: $orangecolor;
-        background-color: $whitecolor;
-    }
+   
 }
 
         
