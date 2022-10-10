@@ -1,5 +1,7 @@
+/*botón del footer - flecha animada*/
+
 .footer__arrow {
-    background-color: $whitecolor;    
+    background-color: $button-secondary;    
     width: 2rem;  
     text-align: center;     
     padding: 0.8rem 0.5rem 0.5rem 0.5rem; 
@@ -7,10 +9,9 @@
     border-radius: 50%;  
     position: absolute;
     top: -1.6rem;      
-    @media all and (min-width: 768px) {         
+    @include tablet {       
         left:50%;
-        transform: translate(-50%);
-       
+        transform: translate(-50%);       
         }
     &:hover {
         animation-name: arrow-up;
@@ -26,3 +27,4 @@
         top: -2rem;
     }
 }
+

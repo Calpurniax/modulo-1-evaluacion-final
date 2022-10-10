@@ -1,21 +1,39 @@
 * {
     font-family: 'Roboto', sans-serif;    
 }
+
 /*fonts*/
 $fonttitle:'Roboto Slab', serif;
 $fonttext:'Roboto', sans-serif;
 $fontbutton:'Roboto', sans-serif;
 
-/*colors*/
+/* more used colors*/
 
 $whitecolor: #fff;
-$bluecolor: #8ccbea;
 $blackcolor: #4a4a4a;
 $orangecolor: #f26002;
-$lightbluebackground: #eff9ff;
-$darkbluebackground: #304268;
-$blueheader: #0271bc;
+$lightblue: #eff9ff;
+$darkblue: #304268;
+$blue: #0271bc;
 
+/*colors by position*/
+
+$header-background: $blue;
+
+$hero-text: $whitecolor;
+$hero-background: $darkblue;
+
+$minititle: #8ccbea;
+$tips-text-color: $blackcolor;
+
+$button-primary: $orangecolor;
+$button-secondary: $whitecolor;
+
+$reasons-background: $lightblue;
+
+$footer-background: $darkblue;
+$footer-text: $whitecolor;
+$footer-heart: $orangecolor;
 
 
 
