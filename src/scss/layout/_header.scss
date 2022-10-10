@@ -2,6 +2,9 @@
     background-color: $blueheader;
     position:fixed;
     top:0px;
-    padding: 0.6rem;
+    padding: 0.6rem 0.3rem 0.6rem 0.3rem;
+    a {
+        padding: 0.6rem;
+    }
 }
 /*etiqueta semántica? debe verse como en la foto?*/
