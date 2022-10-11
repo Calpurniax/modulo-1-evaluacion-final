@@ -1,15 +1,12 @@
-
-
 /*fonts*/
 
 * {
-    font-family: 'Roboto', sans-serif;    
+  font-family: "Roboto", sans-serif;
 }
 
-
-$fonttitle:'Roboto Slab', serif;
-$fonttext:'Roboto', sans-serif;
-$fontbutton:'Roboto', sans-serif;
+$fonttitle: "Roboto Slab", serif;
+$fonttext: "Roboto", sans-serif;
+$fontbutton: "Roboto", sans-serif;
 
 /*Color Palette*/
 
@@ -20,7 +17,6 @@ $blue: #0271bc;
 $lightblue: #eff9ff;
 $lightbluetext: #8ccbea;
 $darkblue: #304268;
-
 
 /*colors by position*/
 
@@ -40,8 +36,3 @@ $reasons-background: $lightblue;
 $footer-background: $darkblue;
 $footer-text: $whitecolor;
 $footer-heart: $orangecolor;
-
-
-
-
-

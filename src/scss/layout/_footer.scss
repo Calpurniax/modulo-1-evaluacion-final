@@ -1,75 +1,71 @@
-
 /*------footer*/
 
 .footer {
-    font-family: $fonttext; 
-    background-color: $footer-background;
-    color: $footer-text;    
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
-    padding-top: 4rem;     
-    padding-bottom: 3rem;
-       @include tablet {  
-            flex-direction: row-reverse;
-            justify-content: space-between;
-            text-align: left;  
-            padding-top: 3rem;             
-            padding-bottom: 1rem;  
-            align-items: flex-start;                   
-        }
-        @include desktop {  
-            justify-content: center;    
-        }
-    &__nav{               
-        text-transform: uppercase;              
-       @include tablet {  
-            width: 75%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;               
-            @include desktop {  
-                width: auto;                                 
-                gap: 9rem;
-            }
-        }
-        &--web {            
-            margin-bottom: 1.7rem;
-                    
-        }
-        &--social {            
-            margin-bottom: 1.7rem;  
-            
-        }
-        a {
-            color: $footer-text;
-            text-decoration: none;            
-        }
-        &--li{
-            padding: 0.5rem;
-        }
+  font-family: $fonttext;
+  background-color: $footer-background;
+  color: $footer-text;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  @include tablet {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    text-align: left;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    align-items: flex-start;
+  }
+  @include desktop {
+    justify-content: center;
+  }
+  &__nav {
+    text-transform: uppercase;
+    @include tablet {
+      width: 75%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      @include desktop {
+        width: auto;
+        gap: 9rem;
+      }
     }
-    &__copy {
-        line-height:2rem;  
-       @include tablet {              
-            margin-left: 2rem;
-        }         
-        @include desktop {  
-            position: relative;           
-            right: 9rem;
-        }                
-        &--heart {            
-            color: $footer-heart;
-            transform: scale(0.7);
-            position: relative;
-            top: 0.1rem;
-            margin-left: 0.1rem;
-            margin-right: 0.1rem;
-        }
-    }         
+    &--web {
+      margin-bottom: 1.7rem;
+    }
+    &--social {
+      margin-bottom: 1.7rem;
+    }
+    a {
+      color: $footer-text;
+      text-decoration: none;
+    }
+    &--li {
+      padding: 0.5rem;
+    }
+  }
+  &__copy {
+    line-height: 2rem;
+    @include tablet {
+      margin-left: 2rem;
+    }
+    @include desktop {
+      position: relative;
+      right: 9rem;
+    }
+    &--heart {
+      color: $footer-heart;
+      transform: scale(0.7);
+      position: relative;
+      top: 0.1rem;
+      margin-left: 0.1rem;
+      margin-right: 0.1rem;
+    }
+  }
 }
-
 
 /* footer arrow in 'components/button*/
