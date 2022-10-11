@@ -12,7 +12,7 @@
 /*-----tips article*/
 
 .tips {
-    margin: 3rem 1rem 0 1rem; 
+    margin: 3rem 1rem 0 1.5rem; 
     @include tablet {
         margin: 3rem 1rem 0 3rem; 
     }
@@ -181,7 +181,7 @@
             grid-row-start: 3;            
         }   
         @include desktop {
-           width:300px;  /*es correcto que esto sean pixeles al ser el último breakpoint?*/
+           width:300px; 
         }
         &:hover{
             color: $button-primary;

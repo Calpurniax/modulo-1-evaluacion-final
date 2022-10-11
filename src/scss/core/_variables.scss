@@ -11,14 +11,16 @@ $fonttitle:'Roboto Slab', serif;
 $fonttext:'Roboto', sans-serif;
 $fontbutton:'Roboto', sans-serif;
 
-/* more used colors*/
+/*Color Palette*/
 
 $whitecolor: #fff;
 $blackcolor: #4a4a4a;
 $orangecolor: #f26002;
-$lightblue: #eff9ff;
-$darkblue: #304268;
 $blue: #0271bc;
+$lightblue: #eff9ff;
+$lightbluetext: #8ccbea;
+$darkblue: #304268;
+
 
 /*colors by position*/
 
@@ -27,7 +29,7 @@ $header-background: $blue;
 $hero-text: $whitecolor;
 $hero-background: $darkblue;
 
-$minititle: #8ccbea;
+$minititle: $lightbluetext;
 $tips-text-color: $blackcolor;
 
 $button-primary: $orangecolor;
