@@ -1,8 +1,4 @@
-/*
-@import 'components/code';
-@import 'components/links';
-@import 'layout/page';
-*/
+
 @import 'core/responsive';
 @import 'core/mixin';
 @import 'core/variables';
@@ -10,72 +6,8 @@
 @import 'layout/header';
 @import 'layout/footer';
 @import 'components/buttons';
+@import 'components/hero';
 
-
-/*------hero*/
-
-.hero {
-    height: 100vh;
-    background-color: $hero-background;
-    background-image: url(../images/cover.jpeg);    
-    background-size: cover;
-    background-position: center;    
-    display: flex;
-    flex-direction: column;
-    align-items: center;   
-    justify-content: flex-end;
-    gap: 10px;
-    @include tablet {
-        padding-bottom: 3rem;
-    }
-    @include desktop {
-        padding-bottom: 1rem;
-    }
-    
-    &__title {
-        @include title;
-        word-spacing: 60vw;        /*no me ha servido max widht 10ch porque lo descentraba ??*/
-        text-align: center;        
-        color: $hero-text;
-        font-size: 2.5rem;
-        text-transform: uppercase;        
-        line-height: 3.7rem;
-        margin: 0 2rem 0 2rem;
-        @include tablet { 
-            font-size: 6rem;
-            line-height: 8rem;
-        }
-    }
-    &__text {
-        color: $hero-text;
-        font-family: $fonttext;
-        font-size: 1rem;
-        margin-top: 1rem;
-        word-spacing: 0.1rem; 
-        @include tablet {
-            font-size: 2rem;
-            text-align: center;
-            line-height: 2.5rem;
-            width: 60vw;                /*como hacer que se baje la última palabra*/
-        } 
-        @include desktop {  
-            font-size: 1.8rem;
-        }
-    }
-    &__arrow {
-        background-color: $button-secondary;        
-        padding: 13px 9.7px 10px 9.7px;
-        border-radius: 50%;
-        margin: 1.5rem 0 2.5rem 0; 
-        @include tablet {   
-            transform: scale(1.2);  
-        }
-        @include desktop {
-            margin: 1.5rem 0 1rem 0; 
-            transform: scale(1.5);
-        }
-    }
-}
 
 /*-----tips article*/
 
