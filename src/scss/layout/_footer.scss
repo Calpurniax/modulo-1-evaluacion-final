@@ -1,9 +1,9 @@
 /*------footer*/
 
 .footer {
-  font-family: $fonttext;
-  background-color: $footer-background;
-  color: $footer-text;
+  font-family: $fonttext; 
+  background-color: $blue;
+  color: black;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -12,7 +12,7 @@
   padding-top: 4rem;
   padding-bottom: 3rem;
   @include tablet {
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
     text-align: left;
     padding-top: 3rem;
@@ -20,7 +20,7 @@
     align-items: flex-start;
   }
   @include desktop {
-    justify-content: center;
+    justify-content: space-between;
   }
   &__nav {
     text-transform: uppercase;
@@ -35,17 +35,22 @@
       }
     }
     &--web {
-      margin-bottom: 1.7rem;
+      margin-bottom: 45px;
     }
     &--social {
-      margin-bottom: 1.7rem;
+      margin-bottom: 45px;
     }
     a {
-      color: $footer-text;
+      color: black;
       text-decoration: none;
     }
     &--li {
       padding: 0.5rem;
+    }
+  }
+  &__component {
+    @include tablet {
+      color: $button-primary;
     }
   }
   &__copy {
